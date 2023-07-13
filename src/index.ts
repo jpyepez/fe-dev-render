@@ -1,4 +1,5 @@
 import express from 'express'
+import cors from 'cors'
 import booksRouter from './router/booksRouter'
 import { errorHandler } from './middleware/errorHandler'
 import ErrorHandler from './utils/ErrorHandler'
@@ -7,6 +8,7 @@ const app = express()
 const port = 8000
 
 app.use(express.json())
+app.use(cors())
 
 app.use('/books', booksRouter)
 
