@@ -17,5 +17,7 @@ app.use((_req, _res, next) => {
 app.use(errorHandler)
 
 app.listen(port, () => {
-    console.log(`🚀 Example app listening at http://localhost:${port}`)
+    console.log(
+        `🚀 Example app listening at https://fe-dev-render.onrender.com`
+    )
 })
